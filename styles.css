@@ -1,0 +1,90 @@
+/* เพิ่มหรือแก้ไขในไฟล์ styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #000000;
+    color: #5a5858;
+    font-size: 1em;
+
+    /* สภานที่ */
+    h1 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #ff0000;
+    }
+    h2 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #2b00ff;
+    }
+    h3 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #ffbb00;
+    }
+    h4 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #ff00ff;
+    }
+    h5 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #00ff6a;
+    }
+    h6 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #00d9ff;
+    }
+    h7 { 
+        font-size: 1.1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #e6da3b;
+    }
+
+    /* เวลานับถอยหลัง */
+    div {
+        font-size: 1em; /* หรือขนาดที่คุณต้องการ */
+        margin: 0; /* ถ้าคุณต้องการลบระยะห่างของ <h1> กับข้อความก่อนหน้า */
+        color: #00ff00;
+    }
+}
+
+.timer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: auto;
+    background-color: #000000; /* สีพื้นหลัง dark ตามต้องการ */
+}
+
+.timer-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #180f02;
+    margin: 5px;
+    flex-grow: 1; /* ทำให้ .timer-container เต็มความยาวของ flex container */
+}
+
+#timer1, #timer2, #timer3, #timer4, #timer5, #timer6, #timer7, #timer8, #timer9, #timer10, #timer11,
+/* Add more timer IDs as needed */ {
+    font-size: 2em;
+    margin: auto;
+    color: #fff;
+}
+
+button {
+    padding: auto;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #002c0a;
+    color: #fff;
+}

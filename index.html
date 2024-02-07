@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooldown Timer Example</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+
+    </head>
+<body>
+    <div class="timer-grid">
+        <!-- Repeat the following timer container block for each timer -->
+        <div class="timer-container">
+            <h1>บุฟเฟต์ 1(2)</h1>
+            <div id="timer1">00:00</div>
+            <select id="selectTime1">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+                <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(1)">Start</button>
+        </div>
+        <!-- Repeat the above block for each timer -->
+
+        <div class="timer-container">
+            <h1>บุฟเฟต์ 2(3)</h1>
+            <div id="timer2">00:00</div>
+            <select id="selectTime2">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(2)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>บุฟเฟต์ 3(2)</h1>
+            <div id="timer3">00:00</div>
+            <select id="selectTime3">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(3)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>ปูนแตก 1(2)</h1>
+            <div id="timer4">00:00</div>
+            <select id="selectTime4">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(4)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>ปูนแตก 2(2)</h1>
+            <div id="timer5">00:00</div>
+            <select id="selectTime5">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+                      <option value="1">&nbsp;&nbsp;1 min</option>
+            </select>
+            <button onclick="startCooldown(5)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>100 เสา(3)</h1>
+            <div id="timer6">00:00</div>
+            <select id="selectTime6">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(6)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>ตึก 24(3)</h1>
+            <div id="timer7">00:00</div>
+            <select id="selectTime7">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(7)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>ตึกแดง(3) </h1>
+            <div id="timer8">00:00</div>
+            <select id="selectTime8">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(8)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h2>Popular(1) </h2>
+            <div id="timer9">00:00</div>
+            <select id="selectTime9">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(9)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h2>รางน้ำ สน.(2) </h2>
+            <div id="timer10">00:00</div>
+            <select id="selectTime10">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(10)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h2> เลข 8(2) </h2>
+            <div id="timer11">00:00</div>
+            <select id="selectTime11">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(11)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h2>Olympic(4)</h2>
+            <div id="timer12">00:00</div>
+            <select id="selectTime12">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(12)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h2>Popular(6)</h2>
+            <div id="timer13">00:00</div>
+            <select id="selectTime13">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(13)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h3>ตึกรุ้ง(2)</h3>
+            <div id="timer14">00:00</div>
+            <select id="selectTime14">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(14)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h3>ธนาคาร(3)</h3>
+            <div id="timer15">00:00</div>
+            <select id="selectTime15">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(15)">Start</button>
+        </div>
+
+        
+        <div class="timer-container">
+            <h3>สนามเทนนิส(3)</h3>
+            <div id="timer16">00:00</div>
+            <select id="selectTime16">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(16)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h3>ร้านเพชร 1(2)</h3>
+            <div id="timer17">00:00</div>
+            <select id="selectTime17">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(17)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h3>ร้านเพชร 2(2)</h3>
+            <div id="timer18">00:00</div>
+            <select id="selectTime18">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(18)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h4>ท่าเรือใน(9)</h4>
+            <div id="timer19">00:00</div>
+            <select id="selectTime19">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(19)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h4>แท้งใหญ่(7)</h4>
+            <div id="timer20">00:00</div>
+            <select id="selectTime20">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(20)">Start</button>
+        </div>
+
+        
+        <div class="timer-container">
+            <h4>แท้งเล็ก(3)</h4>
+            <div id="timer21">00:00</div>
+            <select id="selectTime21">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(21)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h4>รางรถไฟ(2)</h4>
+            <div id="timer21.1">00:00</div>
+            <select id="selectTime21.1">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(21.1)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h4>ใต้สะพาน(2)</h4>
+            <div id="timer22">00:00</div>
+            <select id="selectTime22">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(22)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h4>สนามบินล่าง(3)</h4>
+            <div id="timer23">00:00</div>
+            <select id="selectTime23">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(23)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h5>หลงไหล(6)</h5>
+            <div id="timer24">00:00</div>
+            <select id="selectTime24">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(24)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h5>หลงไหล(4)</h5>
+            <div id="timer25">00:00</div>
+            <select id="selectTime25">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(25)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h5>หลงไหล(5)</h5>
+            <div id="timer26">00:00</div>
+            <select id="selectTime26">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(26)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h5>สนามบอล(2)</h5>
+            <div id="timer27">00:00</div>
+            <select id="selectTime27">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+                <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(27)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h6>พาวส้ม(3)</h6>
+            <div id="timer28">00:00</div>
+            <select id="selectTime28">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+                <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(28)">Start</button>
+        </div>
+
+        
+        <div class="timer-container">
+            <h6>Medic C.(3)</h6>
+            <div id="timer29">00:00</div>
+            <select id="selectTime29">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(29)">Start</button>
+        </div>
+
+
+        <div class="timer-container">
+            <h7>Cap</h7>
+            <div id="timer30">00:00</div>
+            <select id="selectTime30">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(30)">Start</button>
+        </div>
+
+        <div class="timer-container">
+            <h1>Test</h1>
+            <div id="timer99">00:00</div>
+            <select id="selectTime99">
+                <option value="15">15 min</option>
+                <option value="14">14 min</option>
+                <option value="13">13 min</option>
+                <option value="12">12 min</option>
+                <option value="11">11 min</option>
+                <option value="10">10 min</option>
+                <option value="9">&nbsp;&nbsp;9 min</option>
+                <option value="8">&nbsp;&nbsp;8 min</option>
+                <option value="7">&nbsp;&nbsp;7 min</option>
+                <option value="6">&nbsp;&nbsp;6 min</option>
+                <option value="5">&nbsp;&nbsp;5 min</option>
+                <option value="4">&nbsp;&nbsp;4 min</option>
+                <option value="3">&nbsp;&nbsp;3 min</option>
+                <option value="2">&nbsp;&nbsp;2 min</option>
+          <option value="1">&nbsp;&nbsp;1 min</option>
+    
+            </select>
+            <button onclick="startCooldown(99)">Start</button>
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>
+ืืืืืืืืื
